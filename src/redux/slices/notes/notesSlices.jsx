@@ -21,7 +21,7 @@ export const postNote = (noteData) => {
     try {
       const userInfoString = localStorage.getItem('userInfo');
       const token = userInfoString ? JSON.parse(userInfoString).token : null;
-      const response = await axios.post('http://localhost:4000/notes/create-note', noteData, {
+      const response = await axios.post('https://notes-app-blof.onrender.com/notes/create-note', noteData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

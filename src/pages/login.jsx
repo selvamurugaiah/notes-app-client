@@ -110,7 +110,7 @@ console.log(user)
                   </Link>
                 </form>
                 <div className="mt-3">
-                <p>User name: selva@gmail.com</p>
+                <p>User name: mselvajune@gmail.com</p>
               <p>Password : selva@123</p>
                 </div>
               </div>

@@ -45,7 +45,7 @@ export const signupUser = (payload) => {
     
       try {
         const response = await axios.post(
-          "http://localhost:4000/register",
+          "https://notes-app-blof.onrender.com/register",
           payload,
           config
         );
@@ -77,7 +77,7 @@ export const loginUser = (payload) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/login",
+        "https://notes-app-blof.onrender.com/login",
         payload,
         config
       );

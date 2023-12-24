@@ -48,7 +48,7 @@ const Dashboard = () => {
         }
 
         const response = await axios.get(
-          `http://localhost:4000/notes/get-note?userId=${userId}`,
+          `https://notes-app-blof.onrender.com/notes/get-note?userId=${userId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -96,7 +96,7 @@ const Dashboard = () => {
   const handleDeleteNote = async (noteId) => {
     try {
       const response = await axios.delete(
-        `http://localhost:4000/notes/delete-note/${noteId}`,
+        `https://notes-app-blof.onrender.com/notes/delete-note/${noteId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -130,7 +130,7 @@ const Dashboard = () => {
   const handleToggleComplete = async (noteId, completed) => {
     try {
       const response = await axios.put(
-        `http://localhost:4000/notes/update-note/${noteId}`,
+        `https://notes-app-blof.onrender.com/notes/update-note/${noteId}`,
         { completed },
         {
           headers: {
