@@ -1,0 +1,24 @@
+/* Dashboard.css */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      width: calc(100% - 20px);
+    }
+  }
+  
